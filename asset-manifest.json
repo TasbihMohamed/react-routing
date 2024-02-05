@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-routing/static/css/main.e6c13ad2.css",
+    "main.js": "/react-routing/static/js/main.ba20c844.js",
+    "static/js/787.caaea2da.chunk.js": "/react-routing/static/js/787.caaea2da.chunk.js",
+    "static/media/poert1.png": "/react-routing/static/media/poert1.4417330275f78faa31c3.png",
+    "static/media/port3.png": "/react-routing/static/media/port3.494a4a914b5471b41f3e.png",
+    "static/media/port2.png": "/react-routing/static/media/port2.6554473016d32b343f02.png",
+    "static/media/not-found.png": "/react-routing/static/media/not-found.758933b8c62194924d1a.png",
+    "static/media/avataaars.svg": "/react-routing/static/media/avataaars.aa9aff02ddd0ef36a1724ecef4133df9.svg",
+    "index.html": "/react-routing/index.html",
+    "main.e6c13ad2.css.map": "/react-routing/static/css/main.e6c13ad2.css.map",
+    "main.ba20c844.js.map": "/react-routing/static/js/main.ba20c844.js.map",
+    "787.caaea2da.chunk.js.map": "/react-routing/static/js/787.caaea2da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ba20c844.js"
+  ]
+}
