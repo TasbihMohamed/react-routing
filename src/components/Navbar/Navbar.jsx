@@ -26,7 +26,7 @@ function Navbar() {
   };
 
   const handleCloseNavMenu = (index) => {
-    setIsClicked(index);
+    // setIsClicked(index);
     setAnchorElNav(null);
   };
 
