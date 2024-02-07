@@ -15,40 +15,40 @@ export default function Contact() {
               placeholder="userName"
               type="text"
               style={{
-                width: "30%",
+                width: "100%",
                 padding: "10px",
                 border: 0,
-                borderBottom: ".5px solid rgba(0,0,0,.2)",
+                borderBottom: ".5px solid rgba(0,0,0,.15)",
                 marginBottom: "30px",
-                paddingBottom: "20px",
+                paddingBottom: "18px",
               }}
-            />{" "}
-          </Stack>{" "}
+            />
+          </Stack>
           <Stack sx={{ width: { md: "40%", xs: "100%" } }}>
             <input
               placeholder="userAge"
               type="number"
               style={{
-                width: "30%",
+                width: "100%",
                 padding: "10px",
                 border: 0,
-                borderBottom: ".5px solid rgba(0,0,0,.2)",
+                borderBottom: ".5px solid rgba(0,0,0,.15)",
                 marginBottom: "30px",
-                paddingBottom: "20px",
+                paddingBottom: "18px",
               }}
-            />{" "}
-          </Stack>{" "}
+            />
+          </Stack>
           <Stack sx={{ width: { md: "40%", xs: "100%" } }}>
             <input
               placeholder="userEmail"
               type="text"
               style={{
-                width: "30%",
+                width: "100%",
                 padding: "10px",
                 border: 0,
-                borderBottom: ".5px solid rgba(0,0,0,.2)",
+                borderBottom: ".5px solid rgba(0,0,0,.15)",
                 marginBottom: "30px",
-                paddingBottom: "20px",
+                paddingBottom: "18px",
               }}
             />
           </Stack>
@@ -60,9 +60,9 @@ export default function Contact() {
                 width: "100%",
                 padding: "10px",
                 border: 0,
-                borderBottom: ".5px solid rgba(0,0,0,.2)",
+                borderBottom: ".5px solid rgba(0,0,0,.15)",
                 marginBottom: "30px",
-                paddingBottom: "20px",
+                paddingBottom: "18px",
               }}
             />
           </Stack>

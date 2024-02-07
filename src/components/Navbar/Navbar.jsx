@@ -14,13 +14,12 @@ import {
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const pages = ["about", "portfolio", "contact"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [isClicked, setIsClicked] = React.useState(10);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -78,6 +77,7 @@ function Navbar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{ mx: 2 }}
             >
               <MenuIcon />
             </IconButton>
@@ -104,10 +104,12 @@ function Navbar() {
                   m: 0,
                   left: "0px !important",
                   backgroundColor: "#2c3e50",
-                  boxShadow: "0px !important",
+                  boxShadow: "0px 0px 0px !important",
+                  maxWidth: '100%'
                 },
               }}
             >
+              {/* small screen */}
               {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Button
@@ -116,19 +118,31 @@ function Navbar() {
                     sx={{
                       my: 2,
                       display: "block",
-                      color: "white",
-                      backgroundColor: isClicked === index ? "#1abc9c" : "inherit",
+                 
                     }}
                   >
-                    <Link
+                    <NavLink
                       to={page}
-                      style={{
-                        color: "white",
-                        textDecoration: "none", fontWeight: 'bold', fontSize: 20
+
+                      className={({ isActive, isPending }) =>
+                        isActive ? "active" : ""
+                      }
+                      style={({ isActive, isPending, isTransitioning }) => {
+                        return {
+                          color: "white",
+                          textDecoration: "none",
+                          fontWeight: 'bold',
+                          fontSize: 20,
+                          padding: 10,
+
+                          backgroundColor: isActive ? "#1abc9c" : "transparent",
+                          borderRadius: 5
+
+                        };
                       }}
                     >
                       {page}
-                    </Link>
+                    </NavLink>
                   </Button>
                 </MenuItem>
               ))}
@@ -162,11 +176,33 @@ function Navbar() {
                 sx={{
                   my: 2,
                   display: "block",
-                  color: "white",
-                  backgroundColor: isClicked === index ? "#1abc9c" : "inherit",
+              
                 }}
               >
-                <Link
+
+                <NavLink
+                  to={page}
+
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : ""
+                  }
+                  style={({ isActive, isPending, isTransitioning }) => {
+                    return {
+                      color: "white",
+                      textDecoration: "none",
+                      fontWeight: 'bold',
+                      fontSize: 20,
+                      padding: 10,
+
+                      backgroundColor: isActive ? "#1abc9c" : "transparent",
+                      borderRadius: 5
+
+                    };
+                  }}
+                >
+                  {page}
+                </NavLink>
+                {/* <Link
                   to={page}
                   style={{
                     color: "white",
@@ -174,7 +210,7 @@ function Navbar() {
                   }}
                 >
                   {page}
-                </Link>
+                </Link> */}
               </Button>
             ))}
           </Box>
